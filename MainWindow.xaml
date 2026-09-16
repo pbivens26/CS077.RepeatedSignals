@@ -11,6 +11,8 @@
     Text="A;B;C;D;E;F;G;H"/>
             <Button x:Name="ScanButton" Click="ScanButton_Click" Content="Scan batch"
     HorizontalAlignment="Left" Padding="18,8" Margin="0,12"/>
+            <Button Content="Reset receiver" Click="ResetButton_Click"
+ HorizontalAlignment="Left" Padding="18,8" Margin="0,0,0,12"/>
             <TextBlock x:Name="SignalOutput" Text="Ready."
     TextWrapping="Wrap" FontFamily="Consolas"/>
         </StackPanel>

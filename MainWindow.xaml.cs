@@ -17,6 +17,11 @@ public partial class MainWindow : Window
             StringSplitOptions.TrimEntries);
         SignalOutput.Text = ProcessPackets(packets);
     }
+    private void ResetButton_Click(object sender, RoutedEventArgs e)
+    {
+        PacketInput.Text = "PING;PING;DISTRESS;STOP;PING";
+        SignalOutput.Text = "Ready.";
+    }
 
     public static string ProcessPackets(string[] packets)
     {
